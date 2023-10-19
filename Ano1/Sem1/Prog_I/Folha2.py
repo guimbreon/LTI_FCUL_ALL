@@ -257,12 +257,13 @@ em separado) e um número inteiro x, e devolva uma nova data x dias mais à
 frente.
 
 """
+continuar = True
 dia = int(input("Que dia quer trabalhar?\n>>>"))
 mes = int(input("Que mês quer trabalhar?\n>>>"))
 ano = int(input("Que ano quer trabalhar?\n>>>"))
 aMais = int(input("Quantos dias para a frente:\n>>>"))+1
 
-while aMais > 0:
+while aMais > 0 and continuar:
     if ano > 1900 and 1 <= mes <= 12:
         dias_no_mes = 31
 
@@ -291,6 +292,7 @@ while aMais > 0:
         print(f"{dia:02d}/{mes:02d}/{ano}")
     else:
         print("Data inválida.")
-        break
+        continuar = False
 
-print(f"Final: {dia:02d}/{mes:02d}/{ano}")
+if continuar:
+    print(f"Final: {dia:02d}/{mes:02d}/{ano}")
