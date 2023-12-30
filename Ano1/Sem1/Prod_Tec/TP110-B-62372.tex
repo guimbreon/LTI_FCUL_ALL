@@ -1,0 +1,102 @@
+\documentclass[7]{beamer}
+\usepackage{graphicx}
+\usepackage{quoting}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{pgfplots}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{calc}
+
+
+
+\title{Viva-Melhor}
+\author{Guilherme Alexandre Cardoso Soares, nº 62372}
+\date{1º sem 2023-2024}
+
+\setbeamertemplate{caption}[numbered]
+
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{Tabelas de Preços dos Seguros}
+\begin{table}[H]
+\scriptsize
+\centering
+\begin{tabular}{|c|c|c|c|}
+
+\hline
+    & Seguro A & Seguro B & Seguro C \\
+\hline
+Anuidade & 37 & 72 & 62 \\ \hline
+Tarifa médico diurno& 11 & 13 & 10 \\ \hline
+Tarifa médico noturno& 3 & 6 & 5 \\ \hline
+Consultas oferecidas com a anuidade& 10 & 15 & 20 \\
+\hline
+\end{tabular}
+\caption{Tabela com o preçário dos Seguros}
+\end{table}
+
+\begin{table}[h]
+\scriptsize 
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+NºAtos & Seguro A & Seguro B & Seguro C \\
+\hline
+10 & 37 & 72 & 62 \\ \hline
+20 & 115 & 123 & 62 \\ \hline
+30 & 193 & 225 & 142 \\ \hline
+40 & 271 & 327 & 222 \\ \hline
+50 & 349 & 429 & 302 \\ \hline
+60 & 427 & 531 & 382 \\ \hline
+70 & 505 & 633 & 462 \\ \hline
+80 & 583 & 735 & 542 \\ \hline
+90 & 661 & 837 & 622 \\ \hline
+100 & 739 & 939 & 702 \\ \hline
+110 & 817 & 1041 & 782 \\
+\hline
+\end{tabular}
+\caption{Tabela de Valores por dados Atos}
+\label{tab:valores}
+\end{table}
+\end{frame}
+
+\begin{frame}{Gráfico Comparativo dos Seguros}
+
+\begin{figure}[H]
+\small
+\centering
+\includegraphics[width=0.7\textwidth]{grafico.png}
+\caption{Gráfico comparativo dos Seguros de Saúde.}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Qual é o Melhor Seguro de Saúde?}
+\begin{itemize}
+  \item Conclusão geral: O Seguro C destaca-se positivamente.
+  \item Vantagens do Seguro C:
+    \begin{itemize}
+      \item Tarifa vantajosa para atos médicos diurnos (10).
+      \item Segunda opção mais econômica para atos médicos noturnos (5).
+      \item Maior número de atos médicos incluídos na anuidade (20).
+    \end{itemize}
+  \item Comparação com a média de preços de 2020.
+  \item Comparação com os valores dados por P., Andersson (2021).
+  \item Considerações sobre custo-benefício.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Imagem Relativa ao Tema}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{imagemCapa.jpg} 
+\caption{Imagem Relativa ao Tema}
+\end{figure}
+
+\textbf{Fonte:} https://cefin.com.br/seguro-de-vida-entenda-a-importancia-de-contratar/
+\end{frame}
+
+\end{document}

@@ -1,7 +1,5 @@
 # LTI FCUL
-Aqui residem todos(ou quase...) os ficheiros(especialmente exercicios) que fiz durante a minha Licenciatura em Tecnologias de Informação.
-
-        ESTOU ATUALMENTE NO PRIMEIRO ANO, PRIMEIRO SEMESTRE!
+Aqui residem todos(ou quase...) os ficheiros(especialmente exercicios) que fiz durante o PRIMEIRO ANO da minha Licenciatura em Tecnologias de Informação.
 
 ## Ano 1
 
@@ -25,9 +23,9 @@ Aqui tem os programas da UC "Programação I".
 [Ensaio 1](Ano1/Sem1/Comp_Socie/modulo1.pdf): Ensaio do modulo 1.
 
 - Questão 1.2.2: Intimidade Artificl e o problema do alinhamento AI-humano: Se
-  pessoas desenvolverem relacionamentos intimos perto do nosso corpo com sistemas inteligente
-  ("intimidade artificial"), amigos artificiais, como com robós ou assstentes pessoais da IA,
-  quais desafios e problemas ético e societais deviamos deliberar?
+pessoas desenvolverem relacionamentos intimos perto do nosso corpo com sistemas inteligente 
+("intimidade artificial"), amigos artificiais, como com robós ou assstentes pessoais da IA, 
+quais desafios e problemas ético e societais deviamos deliberar?
 
 [Ensaio 2](Ano1/Sem1/Comp_Socie/modulo2.pdf): Ensaio do modulo 2.
 
@@ -40,12 +38,10 @@ Aqui tem os programas da UC "Programação I".
 [Ensaio 2](Ano1/Sem1/Comp_Socie/modulo2.pdf): Ensaio do modulo 2.
 
 - 4.2 Caracterize a censura realizada pelo Facebook e Google, segundo o estudo de
-  Stjernfelt e Lauritzen, “Your post has been removed” (2020). Por exemplo, a imagem
-  da criança que foge dum ataque de Napalm foi removida. A máxima que emerge desta
-  acção (ou doutras) poderia ser colocada numa legislação universal, pensando em termos
-  do imperativo Kantiano? Justifique.
+Stjernfelt e Lauritzen, “Your post has been removed” (2020). Por exemplo, a imagem
+da criança que foge dum ataque de Napalm foi removida. A máxima que emerge desta
+acção (ou doutras) poderia ser colocada numa legislação universal, pensando em termos
+do imperativo Kantiano? Justifique.
 
 
-## Ano 2
-
-## Ano 3
+### Semestre 2

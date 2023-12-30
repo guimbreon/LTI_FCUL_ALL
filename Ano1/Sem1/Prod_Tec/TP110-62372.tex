@@ -1,0 +1,158 @@
+\documentclass{report}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{quoting}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{pgfplots}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{titlepic}
+\usepackage{calc}
+
+\geometry{
+  top=1.5cm,
+  bottom=1.5cm,
+  left=1.9cm,
+  right=1.9cm
+}
+
+\begin{document}
+\titlepic{\includegraphics[scale=0.6]{imagemCapa.jpg}}
+\title{Viva-Melhor\\Licenciatura em Tecnologias de Informação \\ Turma: TP110}
+\author{Guilherme Alexandre Cardoso Soares, nº 62372}
+\date{1º sem 2023-2024}
+\maketitle
+
+\tableofcontents
+\setcounter{page}{1}
+\pagenumbering{roman}
+
+\listoftables
+\listoffigures
+
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{4}
+
+\chapter{Introdução}
+
+Os seguros de saúde desempenham um papel crucial na sociedade, atuando como contratos financeiros que asseguram cobertura financeira e assistência médica em momentos de necessidade. Sua principal finalidade é garantir que as pessoas tenham acesso a cuidados de saúde adequados quando mais precisam. Os seguros de saúde são, portanto, acordos legalmente vinculativos entre duas ou mais partes, estabelecendo obrigações e direitos específicos, conforme definido no Artigo 1 da Seção no Decreto-Lei n.º 72/2008.
+
+\begin{quoting}
+  Seção 1, Artigo 1.º - Princípio geral
+
+  O contrato de seguro rege-se pelo princípio da liberdade contratual, tendo carácter supletivo as regras constantes do presente regime, com os limites indicados na presente secção e os decorrentes da lei geral.
+\end{quoting}
+
+\begin{minipage}{0.45\textwidth}
+  \textbf{Vantagens dos Seguros de Saúde:}
+  \begin{itemize}
+    \item Acesso a cuidados médicos
+    \item Cobertura financeira
+    \item Atendimento rápido
+    \item Prevenção de doenças
+    \item Paz de espírito
+  \end{itemize}
+\end{minipage}%
+\begin{minipage}{0.45\textwidth}
+  \textbf{Desvantagens dos Seguros de Saúde:}
+  \begin{itemize}
+    \item Custos mensais
+    \item Limitações na cobertura
+    \item Dificuldade em encontrar médicos da rede
+    \item Carências e restrições
+    \item Burocracia
+    \item Aumentos de prêmios
+  \end{itemize}
+\end{minipage}
+
+\chapter{Caso de Estudo - Viva Melhor}
+
+O presente estudo analisa as opções de seguros de saúde disponíveis para o senhor Nelson, representado pelo número de aluno 62372. Em conformidade com a Declaração Universal dos Direitos Humanos, que preconiza o direito à saúde, Portugal oferece um sistema público, o Serviço Nacional de Saúde (SNS). Contudo, devido à demanda crescente, surgem seguros privados como alternativa. O senhor Nelson busca a melhor opção para seu agregado familiar entre três planos de seguro (A, B e C), considerando o número de atos médicos diurnos e noturnos esperados.
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{|c|c|c|c|}
+    \hline
+    & Seguro A & Seguro B & Seguro C \\
+    \hline
+    Anuidade & 37 & 72 & 62 \\ \hline
+    Tarifa de ato médico diurno & 11 & 13 & 10 \\ \hline
+    Tarifa de ato médico noturno & 3 & 6 & 5 \\ \hline
+    Atos médicos oferecidos com a anuidade & 10 & 15 & 20 \\
+    \hline
+  \end{tabular}
+  \caption{Tabela com o preçario dos Seguros}
+\end{table}
+
+\begin{table}[h]
+  \centering
+  \begin{tabular}{|c|c|c|c|}
+    \hline
+    Nº Atos & Seguro A & Seguro B & Seguro C \\
+    \hline
+    10 & 37 & 72 & 62 \\ \hline
+    20 & 115 & 123 & 62 \\ \hline
+    30 & 193 & 225 & 142 \\ \hline
+    40 & 271 & 327 & 222 \\ \hline
+    50 & 349 & 429 & 302 \\ \hline
+    60 & 427 & 531 & 382 \\ \hline
+    70 & 505 & 633 & 462 \\ \hline
+    80 & 583 & 735 & 542 \\ \hline
+    90 & 661 & 837 & 622 \\ \hline
+    100 & 739 & 939 & 702 \\ \hline
+    110 & 817 & 1041 & 782 \\
+    \hline
+  \end{tabular}
+  \caption{Tabela de Valores por dados Atos}
+  \label{tab:valores}
+\end{table}
+
+\begin{figure}[H]
+  \begin{center}
+    \begin{tikzpicture}
+      \begin{axis}[
+          xlabel={Nº Atos Médicos Anuais},
+          ylabel={Custo Total},
+          legend style={at={(0.5,-0.2)},anchor=north},
+        ]
+        \addplot[smooth,mark=*,blue] table [x=N, y=SeguroA, col sep=comma] {dados.csv};
+        \addlegendentry{Seguro A}
+
+        \addplot[smooth,mark=square*,red] table [x=N, y=SeguroB, col sep=comma] {dados.csv};
+        \addlegendentry{Seguro B}
+
+        \addplot[smooth,mark=triangle*,green] table [x=N, y=SeguroC, col sep=comma] {dados.csv};
+        \addlegendentry{Seguro C}
+      \end{axis}
+    \end{tikzpicture}
+  \end{center}
+  \caption{Gráfico comparativo dos Seguros de Saúde.}
+  \label{fig:comparison}
+\end{figure}
+
+\chapter{Conclusão}
+
+Conforme evidenciado no gráfico apresentado na Figura~\ref{fig:comparison}, o qual reflete os dados contidos na Tabela~\ref{tab:valores}, é possível concluir que, em termos gerais, o Seguro C destaca-se positivamente em comparação com os outros dois seguros analisados. Apesar de apresentar uma anuidade mais elevada, este seguro oferece uma gama mais abrangente de benefícios. Destaca-se por oferecer uma tarifa mais vantajosa para atos médicos diurnos (10), ser a segunda opção mais econômica para atos médicos noturnos (5) e se destacar como a opção que proporciona o maior número de atos médicos incluídos na anuidade (20).
+
+Podemos então, comparar com a média de preços de 2020 que era cerca de 338 Euros, ou seja, cerca de 30 euros mensais (sendo essa a anuidade), vamos considerar então, que o Sr. Nelson queira ter 30 visitas ao médico, terá de pagar ao todo 142 Euros, ou seja, cerca de 14 euros mensalmente (ECO, 2021, 10 de fevereiro).
+
+Temos ainda que comparar com os valores dados por P. Andersson (2021, Março 5) no jornal e-konomista.pt, que, por exemplo, 500 euros por ano dariam para pagar cerca de 5 consultas de especialidade de 80 euros sem qualquer desconto, e ainda lhe sobravam 100 euros para exames e alguns medicamentos.
+
+E tendo em conta os diferentes pontos de vista sobre o custo-benefício dos seguros de saúde, é essencial que o Sr. Nelson leve em consideração suas próprias necessidades e preferências ao escolher um plano.
+
+Além disso, ao analisar a oferta de seguros de saúde, o Sr. Nelson deve levar em consideração não apenas o custo da anuidade, mas também os benefícios oferecidos, como cobertura para atos médicos diurnos e noturnos, número de consultas incluídas na anuidade, entre outros fatores.
+
+É crucial que o Sr. Nelson avalie cuidadosamente as condições, franquias e exclusões de cada plano, garantindo que escolha aquele que melhor atenda às suas necessidades específicas. Além disso, ele pode considerar a possibilidade de consultar mediadores de seguros para obter simulações e comparar ofertas de diferentes seguradoras.
+
+Em síntese, minha recomendação para o Sr. Nelson é o seguro A. No entanto, é crucial que ele leve em consideração os pontos discutidos anteriormente para tomar uma decisão informada sobre qual seguro melhor atende às suas necessidades específicas.
+
+\chapter{Referências}
+
+\begin{itemize}
+  \item Decreto-Lei n.º 72/2008, de 16 de abril. Regime jurídico do contrato de seguro. Diário da República, Capítulo 1, Secção 1, Artigo 1 (Conteúdo típico).
+  \item Andersson, P. (2021, Março 5). Qual é o melhor seguro de saúde em Portugal? Ekonomista. https://www.e-konomista.pt/qual-o-melhor-seguro-de-saude-em-portugal/
+  \item ECO. (2021, Fevereiro 10). Portugueses com seguros de saúde já são quase 3 milhões. ECO. https://eco.sapo.pt/2021/02/10/portugueses-com-seguros-de-saude-ja-sao-quase-3-milhoes/
+\end{itemize}
+\end{document}
